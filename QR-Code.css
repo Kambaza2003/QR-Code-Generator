@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(90, 61, 23)
+}
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.container p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.container input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #494949;
+    border-radius: 5px;
+    margin: 10px 0 20px;
+    border-radius: 10px;
+}
+.container button{
+    width: 100%;
+    height: 50px;
+    background-color: #494eea;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    font-weight: 500;
+}
+#QRCode{
+    width: 200px;
+    max-height: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: max-height 0.4s;
+} 
+#QRCode img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+#QRCode.show-img,
+#QRCode .show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #494949;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-2px);
+    }
+    50%{
+        transform: translate(0px);
+    }
+    75%{
+        transform: translate(2px);
+    }
+    100%{
+        transform: translate(0);
+    }
+    
+}

@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(90, 61, 23)
+    background-image: url(QR-Code-background.png);
+    background-size: cover;
+    
 }
 .container{
     width: 400px;
